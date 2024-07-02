@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <script>
+        let peso = parseFloat(prompt("digite seu peso: "))
+let altura = parseFloat(prompt("digite sua altura: "))
+
+let imc = (peso / (altura ** 2)).toFixed(2)
+
+
+if (imc < 18.5){
+    console.log("seu IMC é " + imc +" Voce esta com peso abaixo do ideal")
+}
+else if(imc >=18.5 && imc < 25)
+{console.log("seu IMC é " + imc +" Esta com o peso normal")}
+
+else if(imc >= 25 && imc<29.9){
+ console.log("seu IMC é " + imc +" Voce esta com sobrepeso")
+}
+else{console.log("seu IMC é " + imc +" Voce esta com obsidade")}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
