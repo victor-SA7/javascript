@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe</title>
+
+    <script>
+        let pensamento = parseInt(Math.random() * 10) * 10;
+        console.log(pensamento)
+
+        let numero = prompt("qual numero estou pensando?");
+
+        for (i = 0; i != numero; i++) {
+
+            if (numero == pensamento) {
+                alert("voce acerto!");
+                break
+            } else {
+                numero = prompt("tente novamente");
+                alert("voce errou!");
+            }
+        }
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
