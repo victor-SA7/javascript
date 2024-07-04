@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio</title>
+
+    <script>
+        email1 = ["v.desouzaaraujo@gmail.com", "riquelme@gmail.com", "neiseioq@gmail.com","amem@gmail.com"]
+        senha1 = ["amem10", "alo3210", "nemsei1", "deus77"]
+        
+        let email = prompt("Digite seu email: ")
+        let senha = prompt("Diga sua senha: ") 
+
+        for(i = 0;i < email1.length && i < senha1.length; i++) {
+            if(email===email1[i] && senha===senha1[i]){
+                alert("Usuario logado");
+                break   
+            }else{
+                email = prompt("email errado");
+                senha = prompt("senha esta errada ");
+            }
+            
+        }
+
+
+        
+    </script>
+
+</head>
+<body>
+</body>
+</html>
