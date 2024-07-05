@@ -8,19 +8,88 @@
     <script>
         email1 = ["v.desouzaaraujo@gmail.com", "riquelme@gmail.com", "neiseioq@gmail.com","amem@gmail.com"]
         senha1 = ["amem10", "alo3210", "nemsei1", "deus77"]
-        
-        let email = prompt("Digite seu email: ")
-        let senha = prompt("Diga sua senha: ") 
 
-        for(i = 0;i < email1.length && i < senha1.length; i++) {
-            if(email===email1[i] && senha===senha1[i]){
-                alert("Usuario logado");
-                break   
-            }else{
-                email = prompt("email errado");
-                senha = prompt("senha esta errada ");
-            }
+        //o codigo q deu certo
+
+        // for (let i = 0; i < email1.length; i++){
+        //     if(i==0){
+        //         emailInserido = prompt("Insira seu Email: ")
+        //         senhaInserida = prompt("insira sua senha: ")
+        //     }
+
+        //     if(emailInserido == email1[i] && senhaInserida == senha1[1]){
+        //         alert("Cadastro valido")
+        //         break
+        //     }
+        //     else if(i==email1.length-1){
+        //         alert("Tente novamente")
+        //     }
+        // }
+
+
+
+
+
+
+
+       
+        // let email = prompt("Digite seu email: ")
+        // let senha = prompt("Diga sua senha: ") 
+
+
+        // if(email===email1[0] && senha===senha1[0]){
+        //     alert("Usuario logado");
+        // }
+
+
+//2 teste
+        // for(let index = 0; index < email1.length;){
+
+        //     let email = prompt("Digite seu email: ")
+        //     let senha = prompt("Diga sua senha: ")
+
+
+
+        //         if(email === email1[index] && senha === senha1[index]){
+        //             alert("Usuario logado")
+        //             break
+        //         }
+        // }
+
+        // for(i = 0;i < email1.length && i < senha1.length; i++) {
+        //     if(email===email1[i] && senha===senha1[i]){
+        //         alert("Usuario logado");
+        //         break   
+        //     }else{
+        //         email = prompt("email errado");
+        //         senha = prompt("senha esta errada ");
+        //     }
             
+        // }
+
+
+//teste while
+        // let index = 0
+
+        // while(true){
+        //     let email = prompt("Digite seu email: ")
+        //     let senha = prompt("Diga sua senha: ") 
+        // }
+
+        let buscarUsuario = true;
+        
+        while(buscarUsuario){
+            let emailInserido = prompt("insira seu email: ")
+            let senhaInserida = prompt("Insira sua senha: ")
+
+            let usuarioEncontrado = email1.indexOf(emailInserido)
+            let senhaEncontrada = senha1.indexOf(senhaInserida)
+
+            if(usuarioEncontrado >= 0 && senhaEncontrada >= 0 && usuarioEncontrado === senhaEncontrada ){
+                alert("Cadastro valido");
+                break;
+            }
+            alert("Tente novamente")
         }
 
 
