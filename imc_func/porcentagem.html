@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <script>
+    lista=[50,25,120,200,40,80,350,550,20,110]
+
+function porcent(){
+     let maior = 0
+    for(let i = 0; i < lista.length; i++){
+        if(lista[i] > 100){
+            maior++
+        }
+       
+    }
+    resultado = maior * 100 / lista.length
+    return resultado
+}
+
+alert(porcent())
+ </script>
+<body>
+    
+</body>
+</html>
