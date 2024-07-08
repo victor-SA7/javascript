@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+
+
+        function soma(number1 = 7, number2 = 5 ){
+            let cal = number1 + number2
+            return cal
+        }
+    
+
+        function sub(number1 = 7, number2 = 5 ){
+            let cal = number1 - number2
+            return cal
+        }
+       
+
+        function mult(number1 = 7, number2 = 5 ){
+            let cal = number1 * number2
+            return cal
+        }
+
+        
+        function divisão(number1 = 7, number2 = 5 ){
+            let cal = number1 / number2
+            return cal
+        }
+    
+
+        function resultado(){
+            console.log("A soma de 7 e 5: " + soma())
+            console.log("A multiplicação de 7 e 5 é: " + mult())
+            console.log("A subtração de 7 e 5 é: " + sub())
+            console.log("A divisão de 7 e 5 é: " + divisão())
+            
+        }
+
+        resultado()
+
+
+        function calcular(n1, n2, operacao){
+            return operacao(n1, n2);
+        }
+
+        calcular(1,5, dividir);
+        // console.log(mult(), soma(), sub(), divisão())
+
+    </script>
+<!-- 1 criar 4 funções, uma para cada operação(+, -, *, /) -->
+<!-- 2. cada função deve ter 2 parametro =s e retornar o resultado da operação -->
+<!-- Ex: a funçao somar (2 + 5); dev retornar o valor 7 -->
+</head>
+ <body>
+    
+ </body>
+ </html>
