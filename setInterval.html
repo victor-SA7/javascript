@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let numero = 1
+
+        let interval = setInterval(function(){
+            console.log(numero++);
+        })
+
+        setInterval(function(){
+            clearTimeout(interval);
+        }, 10000)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
