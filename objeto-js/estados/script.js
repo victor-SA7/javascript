@@ -1,4 +1,10 @@
-import listaDeEstado from "./estados.js";
+// import listaDeEstado from "./estados.js";
+
+const url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados"
+
+function fetchestados(){
+    const response = fetch(url)
+}
 
 let tagUl = document.getElementById("lista-estados");
 
@@ -18,3 +24,9 @@ for(let i = 0; i < listaDeEstado.length; i++ ){
 //     tagUl.innerHTML = tagUl.innerHTML + "<li>estados: Acre, Região: Norte</li>"
 // }, 3000)
 // console.log(tagUl)
+
+
+
+
+
+// javaScript fetch:recurso do js para fazer chamadas de api externas 
